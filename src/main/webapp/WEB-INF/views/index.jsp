@@ -6,13 +6,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="/style.css"/>
 </head>
 <body>
 
 <h1>Welcome to GC COFFEE</h1>
+<div class="divMain">
+<img src="/coffee-shop-1149155_1280.jpg" class="indexImage" >
+</div>
 
-<p>
-	<a href="register-form">Register!</a>
+<p class="buttonAlign">
+	<a href="register-form" >Please Register!</a>
 </p>
 
 </body>

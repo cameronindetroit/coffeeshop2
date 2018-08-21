@@ -31,9 +31,22 @@ public class CoffeeShopController {
 	@RequestMapping("/register-result")
 	public ModelAndView registrationResults(@RequestParam("firstname") String firstName,
 			@RequestParam("lastname") String lastName, @RequestParam("email") String email,
-			@RequestParam("number") String number, @RequestParam("password") String password) {
+			@RequestParam("number") String number, @RequestParam("password") String password,
+			@RequestParam("password2") String password2, @RequestParam("age") String age) {
+
+		User user = new User();
+		String confirmedPassword = user.confirmedPassword(password, password2);
+		user.setFirstName(firstName);
+		user.setLastName(lastName);
+		user.setEmail(email);
+		user.setNumber(number);
+		user.setPassword(password);
+		user.setAge(age);
+		user.setPassword2(password2);
+		user.setConfirmedPassword(confirmedPassword);
+
 		ModelAndView mav = new ModelAndView("registerresult");
-		mav.addObject("firstname", firstName);
+		mav.addObject("user", user);
 
 		return mav;
 	}
