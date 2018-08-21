@@ -25,10 +25,10 @@
     <div class="form-group col-md-6">
       <label for="inputPassword4">password</label>
       <input name="password" type="password" class="form-control" id="inputPassword4" 
-      required minlength="8" maxLength= "12" placeholder="8-12 characters ">
-      <label for="inputPassword4">retype Password</label>
+      required minlength="8" maxLength= "12" placeholder="8-12 characters "><br>
+      <label for="inputPassword4">Confirm Password</label>
       <input name="password2" type="password" class="form-control" id="inputPassword4" 
-      required minlength="8" maxLength= "12" placeholder="must be the same">
+      required minlength="8" maxLength= "12" placeholder="must match above">
     </div>
     
   </div>
