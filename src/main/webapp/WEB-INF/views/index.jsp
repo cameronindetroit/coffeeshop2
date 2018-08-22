@@ -27,12 +27,12 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach var="item" items="${items}">
+				<c:forEach var="item" items="${item}">
 				<tr>
-					<td><a href="/items/${items.id}">${items.name}</a></td>
-					<td>${items.description}</td>
-					<td>${items.quantity}</td>
-					<td>${items.price}</td>
+					<td><a href="/items/${item.id}">${item.name}</a></td>
+					<td>${item.description}</td>
+					<td>${item.quantity}</td>
+					<td>${item.price}</td>
 				</tr>
 				</c:forEach>
 			</tbody>
