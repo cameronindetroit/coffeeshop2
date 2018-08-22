@@ -16,7 +16,7 @@
 <h1> <image src="/Paper_Cups_-_isolated.png"/> Please fill out the form to register</h1> 
 
 
-<form action= "/register-result" method="post">
+<form action= "/add-submit" method="post">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">email</label>
