@@ -19,7 +19,9 @@
 
 <div class="container">
 <br>
-		<h1>Items at the coffee shop</h1>
+		<h1>Items at the coffee shop</h1><br>
+		<input type="text" value="${name}" class="form-control mb-2 mr-sm-2" id="category" name="category" placeholder="Search for item by name">
+		<button type="submit" class="btn btn-primary mb-2 mr-2">Search</button>
 		<table class="table">
 			<thead>
 				<tr>
